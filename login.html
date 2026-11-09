@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sistema Musical</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100
+100%27><text y=%27.9em%27 font-size=%2790%27>🎵</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Login Page -->
+
+<body class="login-page">
+
+<!-- login-card: a caixa branca que guarda o login inteiro. -->
+<div class="login-card">
+
+<!-- login-header: título e subtítulo, centralizados pelo CSS.   -->
+
+ <div class="login-header">
+ <h1>Sistema Musical </h1>
+ <p>Entre com suas credenciais</p>
+ </div>
+
+ <form method="post" action="#">
+
+<!-- form-group. -->
+<div class="form-group">
+<!-- for="usuario" é igual ao id do input: clicar no texto foca o campo. -->
+<label for="usuario">Usuário</label>
+<input type="text"
+id="usuario"
+name="usuario"
+required
+autocomplete="username"
+placeholder="Seu usuário">
+<!--
+50 type="text": campo de texto comum.
+51 name: o nome do dado que o PHP vai receber na Sprint 2.
+52 required: o navegador não deixa enviar vazio.
+53 autocomplete: o navegador pode sugerir o usuário salvo.
+54 placeholder: a dica cinza dentro do campo.
+55 -->
+</div>
+
+<div class="form-group">
+<label for="senha">Senha</label>
+<!-- type="password": esconde o que a pessoa digita. -->
+<input type="password"
+id="senha"
+name="senha"
+required
+autocomplete="current-password"
+placeholder="Sua senha">
+</div>
+
+<!-- type="submit": envia o formulário. A classe btn-primary deixa o botão azul. -->
+<button type="submit" class="btn-primary">Entrar</button>
+</form>
+
+<!-- login-hint: a dica com as credenciais de teste. <code> mostra em fonte de código. -->
+<div class="login-hint">
+<strong>Credenciais de teste:</strong><br>
+Usuário: <code>admin</code> &nbsp;·&nbsp; Senha: <code>123</code>
+<!-- &nbsp; = espaço que não quebra a linha. -->
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
